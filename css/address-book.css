@@ -1,0 +1,72 @@
+/* *****************************************************************************
+	ADDRESS-BOOK
+****************************************************************************** */
+h1{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+}
+.ajout-supprime{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.project-section{
+	margin: auto;
+	margin-bottom: 50px;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.click{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	vertical-align: auto;
+	padding: 10px;
+	background-color: tomato;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	margin-left: 5px;
+}
+.gestion,.liste{
+	width: 40%;
+	padding: 20px;
+	background-color: #7f939c	;
+	border-radius: 10px;
+	color: white;
+	opacity: 0.9;
+}
+.contacts{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+	align-items:flex-start;
+	
+}
+.boutton{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	padding-top: 10px;
+}
+button{
+	margin-left: 5px;
+}
+.detail{
+	display: none;
+}
+li{
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+	list-style: none;
+	margin-bottom: 10px;
+}
+ul{
+	padding: 0%;
+}
+li:hover{
+	background-color: tomato;
+}

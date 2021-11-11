@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <title>Carnet d'adresses - Module JS3</title>
+      <meta name="description" content="Gestion d'un carnet d'adresses exploitant le stockage local du navigateur">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
+      <link href="css/lib/normalize.css" rel="stylesheet">
+      <link href="css/lib/all.min.css" rel="stylesheet">
+      <link href="css/lib/layout-3wa.css" rel="stylesheet">
+      <link href="css/lib/theme-cafeine.css" rel="stylesheet">
+      <link href="css/address-book.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6611e056d0.js" crossorigin="anonymous"></script>
+      <script src="js\jquery-3.6.0.js"></script>
+      <script src="js\utilities.js"></script>
+      <script src="js\events.js"></script>
+  </head>
+  <body>
+    <header class="banner">
+      <a class="banner-link" href="">
+        <strong class="banner-title">Carnet d'adresses</strong>
+        <small>Module JS3</small>
+      </a>
+    </header>
+
+    <main class="container">
+
+      <header class="project-header">
+
+            <!-- Code HTML du titre et de la navigation ici -->
+        <h1>gérer le liste des contacts</h1>
+      </header>
+
+      <div class="project-section">
+
+          <!-- Code HTML du projet ici -->
+        <div class="ajout-supprime">
+          <button type="submit" id="plus" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+          <button type="submit" id="trash" class="btn btn-primary"><i class="fas fa-trash-alt"></i></button>
+
+        </div>
+        <div class="contacts">
+          <section class="liste">
+            <h2>Contacts enregistrés</h2>
+            <ul id="test">
+
+            </ul>
+          </section>
+
+          <section class="gestion">
+
+            <article class="form">
+              <form>
+                <fieldset >
+                  <legend>Saisie/modification d'un contact</legend>
+                  <div class="mb-3">
+                    <label class="form-label">Civilité</label>
+                    <select id="civilite" class="form-select">
+                      <option>Monsieur</option>
+                      <option>Madame</option>
+                    </select>
+                    <br>
+                    <label class="form-label">Prénom</label>
+                    <input type="text" id="prenom" class="form-control" >
+                    <br>
+                    <label class="form-label">Nom</label>
+                    <input type="text" id="nom" class="form-control" >
+                    <br>
+                    <label class="form-label">Téléphone</label>
+                    <input type="text" id="telephone" class="form-control" >
+          
+                  </div>
+                  <section class="boutton">
+                  <button type="submit" id="enregistrer" class="btn btn-primary">Enregistrer</button>
+                  <button type="submit" id="effacer" class="btn btn-primary">Effacer</button>
+                </section>
+                </fieldset>
+              </form>
+            </article>
+
+            <article class="detail">
+              <h2>Détail du contact</h2>
+              <p id="name"></p>
+              <p id="tel"></p>
+              <br>
+              <button type="submit" id="edit" class="btn btn-primary">Editer ce contact</button>
+            </article>
+
+          </section> 
+         </div>
+
+      </div>
+    </main>
+
+    <script src="js\main.js"></script>
+
+    <!-- Affichage du support 3wa -->
+    <script src=".3wa/js/resources.js" data-md="resources/objectives.md"></script>
+  </body>
+</html>
